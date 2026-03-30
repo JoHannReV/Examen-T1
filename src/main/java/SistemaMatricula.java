@@ -24,12 +24,12 @@ public class SistemaMatricula {
         if (!m.codigoCurso().matches("^[A-Za-z0-9]{5}$")) {
             return "Ingrese un código de curso válido";
         }
-/*
+
         // 5. Validación de créditos (entre 1 y 6)
         if (m.creditos() < 1 || m.creditos() > 6) {
             return "La cantidad de créditos debe estar entre 1 y 6";
         }
-
+/*
         // 6. Validación de fecha (menor o igual a hoy)
         if (m.fechaMatricula().isAfter(LocalDate.now())) {
             return "Ingrese una fecha de matrícula válida";
