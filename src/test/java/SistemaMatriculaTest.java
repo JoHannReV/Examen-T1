@@ -23,7 +23,7 @@ class SistemaMatriculaTest {
         // Assert (Afirmar)
         assertEquals("Debe ingresar todos los datos requeridos", resultado);
     }
-/*
+
     @Test
     void test02_CodigoMatriculaInvalido_DebeRetornarError() {
         // Código inválido: minúsculas y faltan números (in123)
@@ -33,7 +33,7 @@ class SistemaMatriculaTest {
 
         assertEquals("Ingrese un código de matrícula válido", resultado);
     }
-
+/*
     @Test
     void test03_NombreEstudianteCorto_DebeRetornarError() {
         // Nombre con menos de 4 letras ("Ana")

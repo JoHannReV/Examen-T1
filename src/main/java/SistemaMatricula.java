@@ -9,12 +9,12 @@ public class SistemaMatricula {
                 m.creditos() == null || m.fechaMatricula() == null) {
             return "Debe ingresar todos los datos requeridos";
         }
-/*
+
 // 2. Validación del código de matrícula (2 Letras Mayúsculas + 4 números)
         if (!m.codigoMatricula().matches("^[A-Z]{2}\\d{4}$")) {
             return "Ingrese un código de matrícula válido";
         }
-
+/*
         // 3. Validación del nombre (solo letras y espacios, mínimo 4 caracteres)
         if (!m.nombreEstudiante().matches("^[a-zA-ZáéíóúÁÉÍÓÚñÑ\\s]{4,}$")) {
             return "El nombre del estudiante debe tener al menos cuatro caracteres alfabéticos";
