@@ -8,9 +8,13 @@ public class MatriculaGestor {
     }
 
     public String procesarMatricula(String aluId, String curId, int creditos, boolean esNuevo) {
-        // 1. Validar Prerrequisitos
         if (!academicoService.tienePrerrequisitos(aluId, curId)) {
             return "Error: No cumple con los prerrequisitos";
+        }
+
+        // 2. Validar Cruce de Horario
+        if (academicoService.tieneCruceHorario(aluId, curId)) {
+            return "Error: El curso tiene cruce de horario";
         }
 
         return "Matrícula Exitosa";
