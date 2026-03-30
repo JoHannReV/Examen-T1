@@ -43,7 +43,7 @@ class SistemaMatriculaTest {
 
         assertEquals("El nombre del estudiante debe tener al menos cuatro caracteres alfabéticos", resultado);
     }
-/*
+
     @Test
     void test04_CodigoCursoInvalido_DebeRetornarError() {
         // Código de curso con 6 caracteres en lugar de 5 ("MAT012")
@@ -53,7 +53,7 @@ class SistemaMatriculaTest {
 
         assertEquals("Ingrese un código de curso válido", resultado);
     }
-
+/*
     @Test
     void test05_CreditosFueraDeRango_DebeRetornarError() {
         // Créditos igual a 7 (rango válido 1-6)
