@@ -33,7 +33,7 @@ class SistemaMatriculaTest {
 
         assertEquals("Ingrese un código de matrícula válido", resultado);
     }
-/*
+
     @Test
     void test03_NombreEstudianteCorto_DebeRetornarError() {
         // Nombre con menos de 4 letras ("Ana")
@@ -43,7 +43,7 @@ class SistemaMatriculaTest {
 
         assertEquals("El nombre del estudiante debe tener al menos cuatro caracteres alfabéticos", resultado);
     }
-
+/*
     @Test
     void test04_CodigoCursoInvalido_DebeRetornarError() {
         // Código de curso con 6 caracteres en lugar de 5 ("MAT012")
