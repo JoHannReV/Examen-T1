@@ -26,4 +26,16 @@ class MatriculaGestorTest {
 
         assertEquals("Error: No cumple con los prerrequisitos", resultado);
     }
+
+//test 2
+@Test
+void test02_HorarioCruzado_DebeRetornarError() {
+    when(academicoService.tienePrerrequisitos("ALU01", "CUR02")).thenReturn(true);
+    when(academicoService.tieneCruceHorario("ALU01", "CUR02")).thenReturn(true);
+
+    String resultado = gestor.procesarMatricula("ALU01", "CUR02", 4, false);
+
+    assertEquals("Error: El curso tiene cruce de horario", resultado);
+}
+
 }
