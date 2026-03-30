@@ -53,7 +53,7 @@ class SistemaMatriculaTest {
 
         assertEquals("Ingrese un código de curso válido", resultado);
     }
-/*
+
     @Test
     void test05_CreditosFueraDeRango_DebeRetornarError() {
         // Créditos igual a 7 (rango válido 1-6)
@@ -63,7 +63,7 @@ class SistemaMatriculaTest {
 
         assertEquals("La cantidad de créditos debe estar entre 1 y 6", resultado);
     }
-
+/*
     @Test
     void test06_TodosLosDatosCorrectos_DebeRegistrarExitosamente() {
         // Todos los datos válidos
