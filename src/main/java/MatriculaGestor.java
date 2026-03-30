@@ -8,6 +8,11 @@ public class MatriculaGestor {
     }
 
     public String procesarMatricula(String aluId, String curId, int creditos, boolean esNuevo) {
-        return "";
+        // 1. Validar Prerrequisitos
+        if (!academicoService.tienePrerrequisitos(aluId, curId)) {
+            return "Error: No cumple con los prerrequisitos";
+        }
+
+        return "Matrícula Exitosa";
     }
 }
