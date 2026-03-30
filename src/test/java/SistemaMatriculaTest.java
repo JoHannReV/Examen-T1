@@ -63,15 +63,12 @@ class SistemaMatriculaTest {
 
         assertEquals("La cantidad de créditos debe estar entre 1 y 6", resultado);
     }
-/*
+
     @Test
     void test06_TodosLosDatosCorrectos_DebeRegistrarExitosamente() {
-        // Todos los datos válidos
         Matricula matricula = new Matricula("IN1234", "Juan Perez", "MAT01", 5, LocalDate.now());
-
         String resultado = sistema.registrar(matricula);
-
         assertEquals("La matrícula ha sido registrada correctamente", resultado);
     }
-*/
+
 }

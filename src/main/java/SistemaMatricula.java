@@ -29,13 +29,13 @@ public class SistemaMatricula {
         if (m.creditos() < 1 || m.creditos() > 6) {
             return "La cantidad de créditos debe estar entre 1 y 6";
         }
-/*
-        // 6. Validación de fecha (menor o igual a hoy)
+
+/*        // 6. Validación de fecha (menor o igual a hoy)
         if (m.fechaMatricula().isAfter(LocalDate.now())) {
             return "Ingrese una fecha de matrícula válida";
         }
 */
         // 7. Si todo es correcto
-        return "La matricula ha sido registrada correctamente";
+        return "La matrícula ha sido registrada correctamente";
     }
 }
