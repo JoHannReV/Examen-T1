@@ -36,6 +36,6 @@ public class SistemaMatricula {
         }
 */
         // 7. Si todo es correcto
-        return "La matrícula ha sido registrada correctamente";
+        return "La matricula ha sido registrada correctamente";
     }
 }
