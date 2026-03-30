@@ -19,12 +19,12 @@ public class SistemaMatricula {
         if (!m.nombreEstudiante().matches("^[a-zA-ZáéíóúÁÉÍÓÚñÑ\\s]{4,}$")) {
             return "El nombre del estudiante debe tener al menos cuatro caracteres alfabéticos";
         }
-/*
+
         // 4. Validación del código de curso (5 caracteres alfanuméricos)
         if (!m.codigoCurso().matches("^[A-Za-z0-9]{5}$")) {
             return "Ingrese un código de curso válido";
         }
-
+/*
         // 5. Validación de créditos (entre 1 y 6)
         if (m.creditos() < 1 || m.creditos() > 6) {
             return "La cantidad de créditos debe estar entre 1 y 6";
